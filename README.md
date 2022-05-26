@@ -1,3 +1,7 @@
+## [Get this title for $10 on Packt's Spring Sale](https://www.packt.com/B07949?utm_source=github&utm_medium=packt-github-repo&utm_campaign=spring_10_dollar_2022)
+-----
+For a limited period, all eBooks and Videos are only $10. All the practical content you need \- by developers, for developers
+
 # Hands-On Penetration Testing on Windows
 
 <a href="https://www.packtpub.com/networking-and-servers/hands-penetration-testing-windows?utm_source=github&utm_medium=repository&utm_campaign=9781788295666 "><img src="https://d1ldz4te4covpm.cloudfront.net/sites/default/files/imagecache/ppv4_main_book_cover/B07949_MockupCoverNew.png" alt="Hands-On Penetration Testing on Windows" height="256px" align="right"></a>
